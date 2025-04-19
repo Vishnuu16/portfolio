@@ -1,11 +1,38 @@
 import React from "react";
 import photo from "../../assets/IMG_20250127_201754.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import resumePDF from "../../assets/VishnuVarthan MERN Stack Dev.pdf"; // Import your resume PDF file
+import resumePDF from "../../assets/VishnuVarthan MERN Stack Dev.pdf";
+import { FaGithub, FaLinkedin, FaBehance, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
+  // Social media links
+  const socialLinks = [
+    { icon: <FaGithub size={20} />, url: "https://github.com/Vishnuu16" },
+    { icon: <FaLinkedin size={20} />, url: "https://linkedin.com/in/vishnu-varthan-163188266" },
+    { icon: <FaInstagram size={20} />, url: "https://instagram.com/vishnu._.16" },
+    { icon: <FaBehance size={20} />, url: "https://www.behance.net/vishnuvkpudu" },
+    
+  ];
+
   return (
-    <div id="home" className="flex items-center flex-col gap-6 px-4 sm:px-10">
+    <div id="home" className="flex items-center flex-col gap-6 px-4 sm:px-10 relative">
+      {/* Social Media Icons (Right Side) */}
+      <div className="hidden md:flex flex-col gap-5 fixed right-6 top-1/2 transform -translate-y-1/2 z-10">
+        {socialLinks.map((social, index) => (
+          <a 
+            key={index}
+            href={social.url} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#60A5FA] transition-colors duration-300 bg-gray-800 bg-opacity-60 p-2 rounded-full hover:bg-opacity-100"
+            aria-label={`Social media link ${index}`}
+          >
+            {social.icon}
+          </a>
+        ))}
+        <div className="h-20 w-0.5 bg-[#60A5FA] mx-auto mt-2"></div>
+      </div>
+
       <img
         className="mt-[100px] w-[200px] h-[200px] object-cover rounded-full border-4 border-white shadow-xl mx-auto"
         src={photo}
@@ -31,7 +58,6 @@ const Home = () => {
           </AnchorLink>
         </div>
 
-        {/* Updated Resume Button with Download Functionality */}
         <a
           href={resumePDF}
           download="Vishnu_Varthan_Resume.pdf"
