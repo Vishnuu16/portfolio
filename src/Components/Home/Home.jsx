@@ -1,9 +1,7 @@
 import React from "react";
 import photo from "../../assets/IMG_20250127_201754.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
-
-
+import resumePDF from "../../assets/VishnuVarthan MERN Stack Dev.pdf"; // Import your resume PDF file
 
 const Home = () => {
   return (
@@ -33,9 +31,14 @@ const Home = () => {
           </AnchorLink>
         </div>
 
-        <div className="border-2 border-white text-white rounded-full px-6 py-3 cursor-pointer hover:border-[#60A5FA] transition duration-200 hover:text-[#60A5FA]">
+        {/* Updated Resume Button with Download Functionality */}
+        <a
+          href={resumePDF}
+          download="Vishnu_Varthan_Resume.pdf"
+          className="border-2 border-white text-white rounded-full px-6 py-3 cursor-pointer hover:border-[#60A5FA] transition duration-200 hover:text-[#60A5FA] hover:scale-105"
+        >
           My Resume
-        </div>
+        </a>
       </div>
     </div>
   );

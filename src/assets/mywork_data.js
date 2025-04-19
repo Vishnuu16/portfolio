@@ -44,7 +44,7 @@ import project2_img from '../assets/Instaclone.png';
 import project3_img from '../assets/Spotreserve.png';
 import project4_img from '../assets/Unicart.png';
 import project5_img from '../assets/Portfolio.png';
-import project6_img from '../assets/project_6.svg';
+
 
 const mywork_data = [
   {

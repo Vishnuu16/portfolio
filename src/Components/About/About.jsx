@@ -1,6 +1,6 @@
 import React from "react";
 import themeimg from "../../assets/theme_pattern.svg";
-import photo from "../../assets/IMG_20250127_201754.jpg";
+import photo from "../../assets/developericonn.jpg";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
