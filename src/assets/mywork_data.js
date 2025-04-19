@@ -139,53 +139,6 @@ const mywork_data = [
     w_img: project5_img,
     buttontext: 'View Code',
   },
-  {
-    w_no: 1,
-    w_name: 'Cab Booking App',
-    w_category: 'MERN Stack',
-    skills: ['React', 'Node.js', 'MongoDB', 'Express'],
-    codeLink: 'https://github.com/1sh4sk/CabBookingService.git',
-    w_img: project1_img,
-    buttontext: 'View Code',
-  },
-  {
-    w_no: 2,
-    w_name: 'Instagram Clone',
-    w_category: 'Frontend',
-    skills: ['React', 'Tailwind'],
-    codeLink: 'https://github.com/Vishnuu16/instagramclone.git',
-    w_img: project2_img,
-    buttontext: 'View Code',
-  },
-  {
-    w_no: 3,
-    w_name: 'Spotreserve - Ticket Booking',
-    w_category: 'UI/UX',
-    skills: ['Figma'],
-    codeLink: 'https://www.behance.net/gallery/218853841/SPOT-RESERVE',
-    w_img: project3_img,
-    buttontext: 'View Design',
-  },
-  {
-    w_no: 4,
-    w_name: 'Unicart-E-commerce App',
-    w_category: 'UI/UX',
-    skills: ['Figma'],
-    codeLink: 'https://www.behance.net/gallery/218856677/UNICART-ECOMMERCE-APP',
-    w_img: project4_img,
-    buttontext: 'View Design',
-
-  },
-  {
-    w_no: 5,
-    w_name: 'Portfolio',
-    w_category: 'Portfolio',
-    skills: ['React', 'API'],
-    codeLink: 'https://github.com/Vishnuu16/portfolio.git',
-    w_img: project5_img,
-    buttontext: 'View Code',
-  },
- 
 ];
 
 export default mywork_data;
